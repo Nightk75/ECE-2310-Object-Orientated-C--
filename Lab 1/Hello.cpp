@@ -2,5 +2,7 @@
 using namespace std;
 int main()
 {
-cout <<"Hello World-CPP\n";
+cout <<"Hello World!\n";
+printf("Hello World again!\n");
+return 0;
 }
