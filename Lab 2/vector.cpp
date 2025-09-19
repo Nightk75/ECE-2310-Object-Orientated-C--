@@ -36,11 +36,20 @@ int main(){
     printf("Before Increment----------\n");
     printMemVec(vector, SIZE);
 
+    incVecBy10(vector, SIZE);
     printf("After Increment----------\n");
+    printMemVec(vector, SIZE);
 
+    while(vector  ){
+        int vector += vector back();
+        vector .pop_back();
+    }
     printf("After Pop----------\n");
+    printMemVec(vector, SIZE);
 
+    i.push_back ();
     printf("After Push----------\n");
+    printMemVec(vector, SIZE);
 
     return 0;
 }
