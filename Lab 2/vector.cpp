@@ -7,10 +7,10 @@ using namespace std;
  * 
  * @param vector 
  */
-void printMemVec(const int vector[], int size){
-    printf("Vector - Each int is worth %lu bytes\n", sizeof(vector[0]));
+void printMemVec(const vector<int> v){
+    printf("Vector - Each int is worth %lu bytes\n", sizeof(int));
     for(int i = 0; i < size; i++){
-        printf("Value %i at Memory Location: %p\n", vector[i], vector + i);
+        printf("Value %i at Memory Location: %p\n", v[i], v + i);
     }
 
 }
@@ -20,17 +20,17 @@ void printMemVec(const int vector[], int size){
  * 
  * @param ... 
  */
-void incVecBy10(int vector[], int size){
+void incVecBy10(int v<int>){
 for(int i = 0; i < size; i++){
-    vector[i] += 10;
+    v[i] += 10;
 }
 }
 
 int main(){
     const int SIZE = 5;
-    int vector[SIZE];
+    vector<int> myvector(5);
     for(int i = 0; i < SIZE; i++){
-        vector[i] = 100 + i;
+        myvector[i] = 100 + i;
     }
     
     printf("Before Increment----------\n");
@@ -40,14 +40,10 @@ int main(){
     printf("After Increment----------\n");
     printMemVec(vector, SIZE);
 
-    while(vector  ){
-        int vector += vector back();
-        vector .pop_back();
-    }
-    printf("After Pop----------\n");
-    printMemVec(vector, SIZE);
+   
 
-    i.push_back ();
+    myvector.push_back(8);
+    myvector.push_back(9);
     printf("After Push----------\n");
     printMemVec(vector, SIZE);
 
