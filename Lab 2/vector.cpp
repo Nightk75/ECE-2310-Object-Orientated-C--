@@ -28,7 +28,7 @@ for(int i = 0; i < v.size(); i++){
 
 int main(){
     const int SIZE = 5;
-    vector<int> v;
+    vector<int> v(SIZE);
     for(int i = 0; i < SIZE; i++){
         v[i] = 100 + i;
     }
