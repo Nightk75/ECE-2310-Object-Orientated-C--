@@ -23,8 +23,9 @@ class RPG {
 
     private:
         string name;
-        int HitsTaken;
-        float Luck;
-        float Exp;
-        int Level;
-}       
+        int hits_taken;
+        float luck;
+        float exp;
+        int level;
+};       
+#endif
