@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include "RPG.h"
 using namespace std;
 
@@ -23,7 +22,7 @@ this->level = level;
 
 //mutators
 void RPG::setHitsTaken(int new_hits){
-    hits_taken= new_hits;
+    hits_taken = new_hits;
 }
 
 bool RPG::isAlive() const {
