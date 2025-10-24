@@ -14,7 +14,7 @@ Charmander::Charmander(string name, int hp, int att, int def, vector<string> t, 
 :Pokemon(name, hp, att, def, t) {
     type = t;
     skills = s;
-    cout << "Overloarded Constructor (Charmander)\n";
+    cout << "Overloaded Constructor (Charmander)\n";
 }
 
 void Charmander::speak(){
