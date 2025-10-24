@@ -1,3 +1,5 @@
+#ifndef CHARMANDER_H
+#define CHARMANDER_H
 #include <string>
 #include <vector>
 #include "Pokemon.h"
