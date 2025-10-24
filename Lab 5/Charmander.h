@@ -12,7 +12,7 @@ class Charmander : public Pokemon{
         Charmander(string name, int hp, int att, int def, vector<string> t, vector<string> s);
         //Mutators
         void speak()/*override*/;
-        void printStats()/*overrid*/;
+        void printStats()/*override*/;
 
     private:
         vector<string> skills;

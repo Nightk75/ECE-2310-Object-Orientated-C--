@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 #include "Pokemon.h"
 using namespace std;
 
