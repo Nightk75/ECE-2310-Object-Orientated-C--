@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include "Charmander.h"
+using namespace std;
 
 Charmander::Charmander() : Pokemon() {
     type.push_back("Fire");

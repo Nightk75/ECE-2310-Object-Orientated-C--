@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Pokemon.h"
+using namespace std;
 
 Pokemon::Pokemon(){
     name = "unidentified";
