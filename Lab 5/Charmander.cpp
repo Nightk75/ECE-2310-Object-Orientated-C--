@@ -10,7 +10,7 @@ Charmander::Charmander() : Pokemon() {
     cout << "Default Constructor (Charmander)\n";
 }
 
-Charmander::Charmander(string name, int hp, int def, vector<string> t, vector<string> s)
+Charmander::Charmander(string name, int hp, int att, int def, vector<string> t, vector<string> s)
 Pokemon(name, hp, att, def, t) {
     type = t;
     skills = s;
