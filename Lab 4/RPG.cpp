@@ -6,8 +6,8 @@ using namespace std;
 RPG::RPG(){
     name = "NPC";
     hits_taken = 0;
-    luck = 0.1f;
-    exp = 50.0f;
+    luck = 0.1;
+    exp = 50.0;
     level = 1;
 }
 
@@ -49,3 +49,55 @@ float RPG::getExp() const {
 int RPG::getLevel() const {
     return level;
 }
+
+/*****New Functions*****/
+        /**
+         * @brief updates name
+         * 
+         * @param name
+         */
+        void setName(string name){
+            this-> name = name;
+        }
+
+        /**
+         * @brief increases RPG's exp by 50, after if exp >= 100.0, 
+         *        increase level by 1 and reset exp to 0 and increase luck by 0.1
+         */
+        void updateExpLevel(){
+            
+            exp = exp + 50.0;
+            if(exp >= 100.0){
+                level = level + 1
+            }
+        }
+
+        /**
+         * @brief Hit or Misses opponent at random, luck is defense. 
+         *        Higher the opponent's luck, more likely an attack will miss.
+         *        If attack is a hit, opponent's hits taken should increase by 1.
+         * 
+         * @param opponent 
+         */
+        void RPG::attack(RPG*opponent){
+            random_device rd;
+            mt19937 gen(rd()); //seed with random
+            uniform_real_distribution<double> dis(0.0, 1.0);
+            float random_num = dis(gen);
+            bool hit = random_num > HIT_FACTOR * opponent. getLuck();
+                if(hit){
+                    opponent -> setHitsTaken() + 1;
+                }
+        }
+
+        /**
+         * @brief Prints in format:
+         *"Name: NPC_X  Hits Taken: X   Luck: 0.X00000  Exp: X0.000000  Level: X    Status: Alive or Dead"
+         */
+        void printStats();
+
+        /**
+         * @brief Destroy the RPG::RPG object
+         * 
+         */
+        ~RPG();
