@@ -56,7 +56,7 @@ int RPG::getLevel() const {
          * 
          * @param name
          */
-        void setName(string name){
+        void RPG::setName(string name){
             this-> name = name;
         }
 
@@ -64,7 +64,7 @@ int RPG::getLevel() const {
          * @brief increases RPG's exp by 50, after if exp >= 100.0, 
          *        increase level by 1 and reset exp to 0 and increase luck by 0.1
          */
-        void updateExpLevel(){
+        void RPG::updateExpLevel(){
             
             exp = exp + 50.0;
             if(exp >= 100.0){
