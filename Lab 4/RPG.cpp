@@ -1,5 +1,6 @@
 #include <iostream>
 #include "RPG.h"
+#include <random>
 using namespace std;
 
 //constructors
@@ -68,7 +69,7 @@ int RPG::getLevel() const {
             
             exp = exp + 50.0;
             if(exp >= 100.0){
-                level = level + 1
+                level = level + 1;
             }
         }
 
