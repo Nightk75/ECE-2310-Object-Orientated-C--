@@ -70,11 +70,6 @@ endRound(winner, loser, loserIndex);
 }
 
 void Game::gameLoop(){
-    if(live_players.size() <= 1){
-        printFinalResults();
-        return;
-    }
-
     while(live_players.size() > 1){
         battleRound();
     }
