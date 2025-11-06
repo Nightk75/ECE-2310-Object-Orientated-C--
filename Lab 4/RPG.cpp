@@ -87,7 +87,7 @@ int RPG::getLevel() const {
             float random_num = dis(gen);
             bool hit = random_num > HIT_FACTOR * opponent -> getLuck();
                 if(hit){
-                    opponent -> int setHitsTaken() + 1;
+                    opponent -> setHitsTaken(opponent->getHitsTaken() + 1);
                 }
         }
 
@@ -104,4 +104,4 @@ int RPG::getLevel() const {
          * @brief Destroy the RPG::RPG object
          * 
          */
-        ~RPG()
+        ~RPG(){}
