@@ -94,7 +94,10 @@ int RPG::getLevel() const {
          * @brief Prints in format:
          *"Name: NPC_X  Hits Taken: X   Luck: 0.X00000  Exp: X0.000000  Level: X    Status: Alive or Dead"
          */
-        void printStats();
+        void RPG::printStats(){
+            cout << " Name:  " << name << " Hits Taken:  " << hits_taken << " Luck:  " << luck 
+            << " Exp:  " << exp << " Level:  " << level << " Status:  " << isAlive();
+        }
 
         /**
          * @brief Destroy the RPG::RPG object
