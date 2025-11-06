@@ -1,5 +1,5 @@
 #ifndef RPG_H
-#define RPG_
+#define RPG_H
 #include <string>
 const float HIT_FACTOR = 0.05;
 const int MAX_HITS_TAKEN = 3;
@@ -7,14 +7,14 @@ class RPG {
     public:
         //constructors
         RPG();
-        RPG(string name, int hits_taken, float luck, float exp, int level);
+        RPG(std::string name, int hits_taken, float luck, float exp, int level);
 
         //mutators
         bool isAlive() const;
         void setHitsTaken(int new_hits);
 
         //accessors
-        string getName() const;
+        std::string getName() const;
         int getHitsTaken() const;
         float getLuck() const;
         float getExp() const; 
@@ -26,7 +26,7 @@ class RPG {
          * 
          * @param name
          */
-        void setName(string name);
+        void setName(std::string name);
 
         /**
          * @brief increases RPG's exp by 50, after if exp >= 100.0, 
@@ -57,7 +57,7 @@ class RPG {
 
 
     private:
-        string name;
+        std::string name;
         int hits_taken;
         float luck;
         float exp;
