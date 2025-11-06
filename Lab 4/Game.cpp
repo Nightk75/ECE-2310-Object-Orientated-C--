@@ -50,7 +50,7 @@ RPG* player2 = players[playerIndex2];
 
 RPG* winner;
 RPG* loser;
-int loserIndex = playerIndex2
+int loserIndex = playerIndex2;
 while(player1 -> isAlive() && player2 -> isAlive()){
     player1 -> attack(player2);
     player2 -> attack(player1);
