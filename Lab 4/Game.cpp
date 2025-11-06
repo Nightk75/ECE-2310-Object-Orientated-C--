@@ -55,10 +55,10 @@ while(player1 -> isAlive() && player2 -> isAlive()){
 }
 
 if(player1 -> isAlive()){
-    winner = player1;
+    RPG*winner = player1;
 } else {
     if(player2 -> isAlive()){
-    winner = player2;
+    RPG*winner  = player2;
     }
 }
 }
