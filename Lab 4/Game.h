@@ -17,7 +17,7 @@ class Game{
         ~Game();
 
     private:
-        vector<RPG*> players;
-        set<int> live_players;
+        std::vector<RPG*> players;
+        std::set<int> live_players;
 };
 #endif
