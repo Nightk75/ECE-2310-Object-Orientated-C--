@@ -85,7 +85,7 @@ int RPG::getLevel() const {
             mt19937 gen(rd()); //seed with random
             uniform_real_distribution<double> dis(0.0, 1.0);
             float random_num = dis(gen);
-            bool hit = random_num > HIT_FACTOR * opponent. getLuck();
+            bool hit = random_num > HIT_FACTOR * opponent.getLuck();
                 if(hit){
                     opponent -> setHitsTaken() + 1;
                 }
