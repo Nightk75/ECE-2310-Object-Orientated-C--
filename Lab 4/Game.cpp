@@ -61,7 +61,6 @@ if(player1 -> isAlive()){
     winner = player2;
     }
 }
-endRound(winner, loser, loserIndex);
 }
 
 void Game::gameLoop(){
