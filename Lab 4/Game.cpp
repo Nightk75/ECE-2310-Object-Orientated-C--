@@ -23,7 +23,7 @@ int Game::selectPlayer(){
     mt19937 gen(rd()); //seed with random
     uniform_real_distribution<> dis(0, live_players.size() - 1);
 
-    int randomIndex = dist(gen);
+    int randomIndex = dis(gen);
     set<int>::iterator it = live_players.begin();
     advance(it, randomIndex);
 
@@ -45,8 +45,8 @@ if(playerIndex1 == playerIndex2){
     battleRound();
     return;
 }
-RPG* player1 = players[playerIndex1]
-RPG* player2 = players[playerIndex2]
+RPG* player1 = players[playerIndex1];
+RPG* player2 = players[playerIndex2];
 
 while(player1 -> isAlive() & player2 -> isAlive()){
     player1 -> attack(player2)
