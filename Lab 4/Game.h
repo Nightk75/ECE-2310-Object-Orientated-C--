@@ -3,7 +3,7 @@
 #include "RPG.h"
 #include <vector>
 #include <set>
-using namespace std;
+#include <string>
 
 class Game{
     public:

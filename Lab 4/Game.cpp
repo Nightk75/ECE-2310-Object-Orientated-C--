@@ -1,4 +1,8 @@
 #include "Game.h"
+#include <iostream>
+#include <iterator>
+#include <random>
+#include <string>
 using namespace std;
 
 Game::Game(){
