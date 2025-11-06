@@ -10,11 +10,11 @@ class Game{
         Game();
         void generatePlayers(int n);
         int selectPlayer();
-        void endRound(RPG* winner, RPG* loser, int loserIndex)
-        void battleRound()
-        void gameLoop()
-        void printFinalResults()
-        ~Game()
+        void endRound(RPG* winner, RPG* loser, int loserIndex);
+        void battleRound();
+        void gameLoop();
+        void printFinalResults();
+        ~Game();
 
     private:
         vector<RPG*> players;
