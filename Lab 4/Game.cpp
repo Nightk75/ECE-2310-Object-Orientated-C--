@@ -2,7 +2,6 @@
 #include <iostream>
 #include <iterator>
 #include <random>
-#include <string>
 using namespace std;
 
 Game::Game(){
@@ -52,9 +51,7 @@ RPG* player2 = players[playerIndex2];
 while(player1 -> isAlive() && player2 -> isAlive()){
     player1 -> attack(player2);
     player2 -> attack(player1);
-}
-
-if(player1 -> isAlive()){
+}if(player1 -> isAlive()){
     RPG*winner = player1;
 } else {
     if(player2 -> isAlive()){
