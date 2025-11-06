@@ -21,9 +21,9 @@ void Game::generatePlayers(int n){
 int Game::selectPlayer(){
     random_device rd;
     mt19937 gen(rd()); //seed with random
-    uniform_real_distribution<> dis(0, live_players.size() - 1);
+    uniform_real_distribution<> dist(0, live_players.size() - 1);
 
-    int randomIndex = dis(gen);
+    int randomIndex = dist(gen);
     set<int>::iterator it = live_players.begin();
     advance(it, randomIndex);
 
