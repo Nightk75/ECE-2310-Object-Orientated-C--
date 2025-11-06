@@ -14,4 +14,6 @@ int main(){
     game.gameLoop();
 
     game.printFinalResults();
+
+    return 0;
 }
