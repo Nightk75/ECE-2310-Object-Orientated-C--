@@ -31,7 +31,7 @@ int Game::selectPlayer(){
     return selectedIndex;
 }
 
-void Game::endRound(RPG *winner, RPG *loser, int loserIndex){
+void Game::endRound(RPG* winner, RPG* loser, int loserIndex){
     winner -> setHitsTaken(0);
     live_players. erase(loserIndex);
     winner -> updateExpLevel();
@@ -61,7 +61,7 @@ if(player1 -> isAlive()){
     winner = player2;
     }
 }
-endRound(RPG *winner, RPG *loser, int loserIndex)
+endRound(RPG* winner, RPG* loser, int loserIndex)
 }
 
 void Game::gameLoop(){
