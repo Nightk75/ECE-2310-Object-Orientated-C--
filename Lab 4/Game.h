@@ -10,7 +10,7 @@ class Game{
         Game();
         void generatePlayers(int n);
         int selectPlayer();
-        void endRound(winner: RPG*, loser: RPG*, loserIndex: int)
+        void endRound(RPG* winner, RPG* loser, int loserIndex)
         void battleRound()
         void gameLoop()
         void printFinalResults()
