@@ -48,22 +48,17 @@ if(playerIndex1 == playerIndex2){
 RPG* player1 = players[playerIndex1];
 RPG* player2 = players[playerIndex2];
 
-RPG* winner;
-RPG* loser;
-int loserIndex = playerIndex2;
+
 while(player1 -> isAlive() && player2 -> isAlive()){
     player1 -> attack(player2);
     player2 -> attack(player1);
-    loserIndex = playerIndex2;
 }
 
 if(player1 -> isAlive()){
     winner = player1;
-    loserIndex = playerIndex1;
 } else {
     if(player2 -> isAlive()){
     winner = player2;
-    loserIndex = playerIndex2;
     }
 }
 endRound(winner, loser, loserIndex);
