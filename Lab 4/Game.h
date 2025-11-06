@@ -1,7 +1,7 @@
 #ifndef Game_h
 #define Game_h
 #include "RPG.h"
-
+#include <vector>
 
 class Game{
     public:
