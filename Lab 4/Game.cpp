@@ -61,6 +61,7 @@ if(player1 -> isAlive()){
     winner = player2;
     }
 }
+endRound(RPG *winner, RPG *loser, int loserIndex)
 }
 
 void Game::gameLoop(){
