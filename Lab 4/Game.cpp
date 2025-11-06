@@ -48,10 +48,12 @@ if(playerIndex1 == playerIndex2){
 RPG* player1 = players[playerIndex1];
 RPG* player2 = players[playerIndex2];
 
-while(player1 -> isAlive() & player2 -> isAlive()){
-    player1 -> attack(player2)
-    player2 -> attack(player1)
+while(player1 -> isAlive() && player2 -> isAlive()){
+    player1 -> attack(player2);
+    player2 -> attack(player1);
 }
+RPG* winner;
+RPG* loser;
 if(player1 -> isAlive()){
     winner = player1;
 } else {
@@ -74,7 +76,7 @@ void Game::gameLoop(){
 }
 
 
-void Game::printFinalResults{
+void Game::printFinalResults(){
     for(int i = 0; i < players.size(); ++i){
         players[i] -> printStats();
     }
