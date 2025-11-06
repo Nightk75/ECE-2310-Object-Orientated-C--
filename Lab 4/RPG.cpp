@@ -104,4 +104,4 @@ int RPG::getLevel() const {
          * @brief Destroy the RPG::RPG object
          * 
          */
-        ~RPG(){}
+        RPG::~RPG(){}
