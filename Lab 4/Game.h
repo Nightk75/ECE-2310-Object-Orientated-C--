@@ -2,6 +2,8 @@
 #define Game_h
 #include "RPG.h"
 #include <vector>
+#include <set>
+using namespace std;
 
 class Game{
     public:
@@ -17,4 +19,5 @@ class Game{
     private:
         vector<RPG*> players;
         set<int> live_players;
-}
+};
+#endif
