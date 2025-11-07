@@ -34,7 +34,7 @@ void Game::endRound(RPG* winner, RPG* loser, int loserIndex){
     winner -> setHitsTaken(0);
     live_players. erase(loserIndex);
     winner -> updateExpLevel();
-    cout << winner -> getName() << " won against " << loser -> getName();
+    cout << winner -> getName() << " won against " << loser -> getName() << endl;
 }
 
 void Game::battleRound(){
