@@ -61,10 +61,6 @@ if(player1 -> isAlive() &&  not (player2 ->  isAlive())){
 else if (not (player1 ->  isAlive()) && player2 -> isAlive()){
     endRound(player2, player1, playerIndex1);
 }
-else{
-    live_players. erase(playerIndex1);
-    live_players. erase(playerIndex2);
-}
 }
 
 void Game::gameLoop(){
