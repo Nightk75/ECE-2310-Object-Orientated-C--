@@ -40,9 +40,10 @@ void Game::endRound(RPG* winner, RPG* loser, int loserIndex){
 void Game::battleRound(){
 int playerIndex1 = selectPlayer();
 int playerIndex2 = selectPlayer();
-while(playerIndex1 == playerIndex2){
-    playerIndex2 = selectPlayer();
-}
+ if (playerIndex1 == playerIndex2) {
+        battleRound();
+        return;
+    }
 
 RPG* player1 = players[playerIndex1];
 RPG* player2 = players[playerIndex2];
