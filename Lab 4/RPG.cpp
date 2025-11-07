@@ -97,7 +97,7 @@ int RPG::getLevel() const {
          */
         void RPG::printStats(){
             cout << " Name:  " << name << " Hits Taken:  " << hits_taken << " Luck:  " << luck 
-            << " Exp:  " << exp << " Level:  " << level << " Status:  " << isAlive();
+            << " Exp:  " << exp << " Level:  " << level << " Status:  " << isAlive() << endl;
         }
 
         /**
