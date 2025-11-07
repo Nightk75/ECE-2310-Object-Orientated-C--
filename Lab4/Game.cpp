@@ -52,8 +52,6 @@ while (player1->isAlive() && player2->isAlive()) {
     player1->attack(player2);
     player2->attack(player1);
 }
-
-}
 if(player1 -> isAlive() &&  not (player2 ->  isAlive())){
     endRound(player1, player2, playerIndex2);
 }
