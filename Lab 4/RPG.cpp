@@ -70,6 +70,8 @@ int RPG::getLevel() const {
             exp = exp + 50.0;
             if(exp >= 100.0){
                 level = level + 1;
+                exp = 0.0;
+                luck = luck + 0.1;
             }
         }
 
