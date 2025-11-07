@@ -96,8 +96,8 @@ int RPG::getLevel() const {
          *"Name: NPC_X  Hits Taken: X   Luck: 0.X00000  Exp: X0.000000  Level: X    Status: Alive or Dead"
          */
         void RPG::printStats(){
-            cout << "Name: " << name << "     Hits Taken: " << hits_taken << "     Luck: " << luck 
-            << "     Exp: " << exp << "     Level: " << level << "     Status: "; 
+            cout << "Name: " << name << "   Hits Taken: " << hits_taken << "   Luck: " << luck 
+            << "   Exp: " << exp << "   Level: " << level << "   Status: "; 
             if(isAlive()){
                 cout << "Alive" << endl;
             } else{
