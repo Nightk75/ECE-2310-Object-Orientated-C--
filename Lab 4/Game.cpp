@@ -51,12 +51,12 @@ RPG* player2 = players[playerIndex2];
 while(player1 -> isAlive() && player2 -> isAlive()){
     player1 -> attack(player2);
     player2 -> attack(player1);
-}if(player1 -> isAlive()){
-    RPG*winner = player1;
-} else {
-    if(player2 -> isAlive()){
-    RPG*winner  = player2;
-    }
+}
+if(player1 -> isAlive() &&  not (player2 ->  isAlive())){
+    endRound(player1, player2, playerIndex2);
+}
+else if (not (player1 ->  isAlive()) && player2 -> isAlive()){
+    endRound(player2, player1, playerIndex1);
 }
 }
 
