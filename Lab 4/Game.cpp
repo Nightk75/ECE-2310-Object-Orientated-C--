@@ -70,7 +70,6 @@ void Game::gameLoop(){
     while(live_players.size() > 1){
         battleRound();
     }
-         printFinalResults();
 }
 
 
