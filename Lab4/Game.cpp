@@ -48,12 +48,11 @@ int playerIndex2 = selectPlayer();
 RPG* player1 = players[playerIndex1];
 RPG* player2 = players[playerIndex2];
 
+while (player1->isAlive() && player2->isAlive()) {
+    player1->attack(player2);
+    player2->attack(player1);
+}
 
-while(player1 -> isAlive() && player2 -> isAlive()){
-    player1 -> attack(player2);
-    if(player2 -> isAlive()){
-    player2 -> attack(player1);
-    }
 }
 if(player1 -> isAlive() &&  not (player2 ->  isAlive())){
     endRound(player1, player2, playerIndex2);
