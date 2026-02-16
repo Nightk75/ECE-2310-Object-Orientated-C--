@@ -1,0 +1,62 @@
+@startuml groupProjectUMLRevised
+
+class SensorData {
+  - timestamp: long
+  - deviceID: String
+  - co: double
+  - humidity: double
+  - light: boolean
+  - lpg: double
+  - motion: boolean
+  - smoke: double
+  - temp: double
+
+  + SensorData(ts: long, deviceID: String, co: double, humidity: double, light: boolean, lpg: double, motion: boolean, smoke: double, temp: double)
+
+  + getTimestamp(): long
+  + getDeviceID(): String
+  + getCO(): double
+  + getHumidity(): double
+  + getLight(): boolean
+  + getLPG(): double
+  + getMotion(): boolean
+  + getSmoke(): double
+  + getTemp(): double
+  + setTemp(temp: double): void
+}
+
+class CSVReader {
+  - filePath: String
+  + CSVReader(filePath: String)
+  + readData(): List
+}
+
+class DataProcessor {
+  + convertTempToCelsius(data: List): List
+  + groupByDevice(data: List): Map
+}
+
+class FileWriter {
+  - outputDirectory: String
+  + FileWriter(outputDirectory: String)
+  + getOutputDirectory(): String
+  + setOutputDirectory(directory: String): void
+  + writeData(data: List, fileName: String): void
+  + exportAttributeFile(data: List, attribute: String): void
+}
+
+class SensorHub {
+  + SensorHub(reader: CSVReader, processor: DataProcessor, writer: FileWriter)
+  + collectData(): void
+  + runProcessing(): void
+  + exportData(): void
+}
+
+CSVReader --> SensorData : "creates"
+DataProcessor --> SensorData : "process"
+SensorHub *-- SensorData : "owns"
+SensorHub --> CSVReader : "uses"
+SensorHub --> DataProcessor : "uses"
+SensorHub --> FileWriter : "uses"
+
+@enduml
